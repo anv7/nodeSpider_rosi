@@ -24,7 +24,7 @@ getUrl(data) {
     $(".b_ul li a img").each(async (i, e) => {
         let obj = {
             name: e.attribs.alt, //图片网页的名字，后面作为文件夹名字
-            url:'http://www.rosi77.com' + e.parent.attribs.href //图片网页的url
+            url:'http://www.rosi23.com' + e.parent.attribs.href //图片网页的url
         };
 
     list.push(obj); //输出目录页查询出来的所有链接地址

@@ -1,8 +1,8 @@
 const model = require("./model");
 
-let start = 2;
-let end = 10;
-let basicPath = "http://www.rosi77.com/x/rosi/list_1_";
+let start = 3;
+let end = 4;
+let basicPath = "http://www.rosi23.com/x/rosi/list_1_";
 let type = '.html';
 
 let main = async url => {
