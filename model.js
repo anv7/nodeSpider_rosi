@@ -1,7 +1,7 @@
 const rp = require("request-promise"), //进入request-promise模块
     fs = require("fs"), //进入fs模块
     cheerio = require("cheerio"), //进入cheerio模块
-    depositPath = "/Volumes/EOS_DIGITAL/nodePa/"; //存放照片的地址
+    depositPath = "/Volumes/5D_MARK_III/nodePa/"; //存放照片的地址
 let downloadPath; //下载图片的文件夹地址
 
 module.exports = {
@@ -22,9 +22,10 @@ getUrl(data) {
     const $ = cheerio.load(data.res); //将html转换为可操作的节点
 
     $(".b_ul li a img").each(async (i, e) => {
+        // console.log(e.parent.attribs.href)
         let obj = {
             name: e.attribs.alt, //图片网页的名字，后面作为文件夹名字
-            url:'http://www.rosi23.com' + e.parent.attribs.href //图片网页的url
+            url:'http://www.rosi2019.com' + e.parent.attribs.href //图片网页的url
         };
 
     list.push(obj); //输出目录页查询出来的所有链接地址
